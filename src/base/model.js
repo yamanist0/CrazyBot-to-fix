@@ -56,6 +56,7 @@ class Model {
      * @param {*} [options={}]
      * @returns {Promise<Array<*>>}
      */
+    console.log('readAll called', options);
     async readAll(options = {}) {
         let modelDatas;
 
