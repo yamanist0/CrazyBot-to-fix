@@ -59,6 +59,7 @@ class Menu extends Command {
             return;
         }
 
+        // If there are no items the place is likely closed
         if (data.menu.length === 0) {
             interaction.error("utility/menu:CLOSED", { resto: restaurant }, { edit: true });
             return;
