@@ -13,6 +13,7 @@ class Checker {
         if (!config.token) throw Error("Bot token is not valid");
 
         for (const key in config.apis) {
+            // make sure we have all keys before starting
             if (!config.apis[key]) throw Error(`the api key "${key}" is not defined`);
         }
     }
