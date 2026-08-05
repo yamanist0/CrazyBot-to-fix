@@ -64,8 +64,8 @@ class Weather extends Command {
         const weather = await this.#getWeather(interaction.locale, data.city);
         data.weather = weather;
 
-        const error = await this.#editEmbed(interaction, embed, buttons, data);
-        if (error) return;
+        const err = await this.#editEmbed(interaction, embed, buttons, data);
+        if (err) return;
 
         const time = 300_000;
         const filter = i => i.user.id === interaction.user.id;
