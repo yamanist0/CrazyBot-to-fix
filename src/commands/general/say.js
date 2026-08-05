@@ -12,6 +12,7 @@ class Say extends Command {
             contexts: [InteractionContextType.Guild],
             restricted: false,
             NSFW: false,
+            // Only users with these permissions can run this
             memberPermissions: PermissionFlagsBits.ManageMessages | PermissionFlagsBits.ManageChannels,
             botPermissions: [PermissionFlagsBits.ViewChannel, PermissionFlagsBits.SendMessages]
         });
