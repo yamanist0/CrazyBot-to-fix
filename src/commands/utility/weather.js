@@ -83,8 +83,8 @@ class Weather extends Command {
         });
 
         collector.on("end", () => {
-            for (const button of buttons.components) {
-                button.setDisabled(true);
+            for (const btn of buttons.components) {
+                btn.setDisabled(true);
             }
 
             interaction.editReplyCatch({ components: [buttons] });
