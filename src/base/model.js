@@ -37,6 +37,7 @@ class Model {
      * @param {*} [options={}]
      * @returns {Promise<*>}
      */
+    // Get the data using the id and optional settings
     async read(id, options = {}) {
         let modelData = JSON.parse(await this.#db.cache.get(`${this.#model}-${id}`));
         if (modelData) return modelData;
