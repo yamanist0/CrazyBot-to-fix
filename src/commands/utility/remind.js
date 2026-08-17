@@ -85,7 +85,7 @@ class Remind extends Command {
             case "remove":
                 this.#remove(interaction, name, data.user);
                 break;
-            // handle unknown commands by showing the list instead
+// if we dont know the command just show the list
             default:
                 this.#list(interaction, data.user);
         }
