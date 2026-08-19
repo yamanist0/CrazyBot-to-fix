@@ -11,6 +11,7 @@ class UserModel extends Model {
      * @returns {Promise<{id: string, login: string}>}
      */
     async findOrCreate(id) {
+        console.log("Finding or creating user with ID:", id);
         let userData = await this.read(id);
         if (!userData) userData = await this.create(id);
 
