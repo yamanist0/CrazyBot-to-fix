@@ -128,6 +128,7 @@ class Wiki extends Command {
                     .setColor(0x0099ff)
                     .setDescription(chunks[i])
                     .setFooter({ text: interaction.t("experimental/wiki:SOURCE_FOOTER") });
+                // Only put the image on the last chunk so it does not repeat
                 if (i === chunks.length - 1) {
                     followUpEmbed.setImage(image);
                 }
