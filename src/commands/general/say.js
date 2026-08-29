@@ -17,6 +17,7 @@ class Say extends Command {
             botPermissions: [PermissionFlagsBits.ViewChannel, PermissionFlagsBits.SendMessages]
         });
 
+        console.log("Configuring say command. Current config:", this.config);
         this.config.data
             .addStringOption(option =>
                 option.setName("message").setDescription("The message to send.").setMaxLength(1900).setRequired(true)
