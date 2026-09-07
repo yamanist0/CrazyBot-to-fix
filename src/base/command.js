@@ -45,6 +45,7 @@ class Command {
             const translationName = translate(`${baseKey}:NAME`);
             const translationDesc = translate(`${baseKey}:DESCRIPTION`);
 
+            console.log("Localizing " + language + " name: " + translationName + " desc: " + translationDesc);
             data.setNameLocalization(language, translationName !== "NAME" ? translationName : name);
             data.setDescriptionLocalization(
                 language,
