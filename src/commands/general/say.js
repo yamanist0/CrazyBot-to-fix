@@ -40,6 +40,7 @@ class Say extends Command {
         const message = interaction.options.getString("message");
         const channel = interaction.options.getChannel("channel") || interaction.channel;
 
+        console.log("Sending message: " + message + " to channel: " + channel.id);
         await channel.send(message);
 
         interaction.success("general/say:SUCCESS", { message }, { ephemeral: true });
