@@ -3,6 +3,7 @@ const Model = require("@base/model");
 class GuildModel extends Model {
     constructor(db) {
         console.log("Initializing guild repo with db:", db);
+        // call parent constructor with our database and table name
         super(db, "guilds");
     }
 
