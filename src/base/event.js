@@ -3,6 +3,7 @@ class Event {
      * Event constructor
      * @param {import("./bot")} client
      */
+    console.log("Constructing class");
     constructor(client, { eventName = null, once = false }) {
         this.client = client;
         this.eventName = eventName;
