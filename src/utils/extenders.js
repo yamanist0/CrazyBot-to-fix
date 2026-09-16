@@ -5,6 +5,7 @@ const embedConfig = require("@root/config").embed;
 class CustomEmbedBuilder extends EmbedBuilder {
     constructor(data = {}) {
         super(data);
+        // set default color if none was given by user
         if (!data.color) this.setColor(embedConfig.color.default);
     }
 }
