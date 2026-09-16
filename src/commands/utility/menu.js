@@ -65,8 +65,8 @@ class Menu extends Command {
             return;
         }
 
-        const endTime = Date.now();
-        data.time = endTime - startTime;
+        const end = Date.now();
+        data.time = end - startTime;
 
         this.#editEmbed(interaction, embed, data);
     }
