@@ -18,6 +18,7 @@ class Ticket extends Command {
             description: "Open a ticket on the server.",
             dirname: __dirname,
             cooldown: 3000,
+            // disabled for now because it is not ready yet
             enabled: false,
             contexts: [InteractionContextType.Guild],
             restricted: false,
