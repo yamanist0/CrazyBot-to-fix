@@ -29,6 +29,7 @@ class Menu extends Command {
             }
         ];
 
+        console.log("Adding restaurant option to menu command");
         this.config.data.addStringOption(option =>
             option
                 .setName("restaurant")
