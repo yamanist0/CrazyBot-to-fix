@@ -9,6 +9,7 @@ class Database extends PrismaClient {
     constructor() {
         super();
 
+        // Start with an empty cache for now
         this.cache = null;
         this.models = { guilds: new GuildModel(this), users: new UserModel(this) };
     }
