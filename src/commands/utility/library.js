@@ -62,6 +62,7 @@ class Library extends Command {
         let image = "https://static-01.daraz.pk/p/3fe9c8a1dbfb5b3910e306183ec5d669.jpg"; // Default image
         if (isbn) image = `https://pictures.abebooks.com/isbn/${isbn}-fr.jpg`; // Use ISBN-based image if available
 
+        console.log("Checking MMS ID:", mms);
         if (!mms) {
             // Notify the user if the MMS ID is missing, as availability cannot be checked
             return interaction.error("utility/library:MISSING_MMS", null, { ephemeral: true });
