@@ -14,6 +14,7 @@ class Checker {
 
         for (const key in config.apis) {
             // make sure we have all keys before starting
+            console.log("Checking API key:", key);
             if (!config.apis[key]) throw Error(`the api key "${key}" is not defined`);
         }
     }
