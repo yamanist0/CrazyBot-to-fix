@@ -8,6 +8,7 @@ class Gpt extends Command {
             name: "gpt",
             description: "Ask AI with your prompt.",
             dirname: __dirname,
+            // 3 second cooldown to stop spam
             cooldown: 3000,
             enabled: true,
             contexts: [InteractionContextType.Guild, InteractionContextType.BotDM],
