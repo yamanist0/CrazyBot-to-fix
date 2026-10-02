@@ -26,7 +26,7 @@ class Edt extends Command {
             botPermissions: null
         });
 
-        console.log("Configuring options for edt command");
+console.log("Configuring edt options...");
         this.config.data.addStringOption(option =>
             option.setName("identifier").setDescription("🔑 Enter your ENT login.").setRequired(false)
         );
