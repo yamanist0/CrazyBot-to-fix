@@ -1,6 +1,7 @@
 const { ChatInputCommandInteraction, EmbedBuilder, Colors, InteractionContextType } = require("discord.js");
 const Command = require("@base/command");
 
+
 class Library extends Command {
     constructor(client) {
         super(client, {
